@@ -5,6 +5,11 @@ class UserMovie < ActiveRecord::Base
     belongs_to :user
     belongs_to :movie 
 
+    # def new_user_movie
+
+    # end 
+    
+
     #  prompt.on(:keypress) do |event|
     #     if event.value == 'l'
     #     prompt.trigger(:keyleft)

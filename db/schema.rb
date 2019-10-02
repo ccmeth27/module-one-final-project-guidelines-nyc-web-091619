@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2019_09_30_204942) do
   create_table "user_movies", force: :cascade do |t|
     t.integer "user_id"
     t.integer "movie_id"
-    t.boolean "watched", default: false
+    t.boolean "watchlist", default: false
     t.boolean "rejected", default: false
     t.integer "rating"
     t.datetime "created_at", null: false
