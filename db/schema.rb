@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 2019_09_30_204942) do
     t.string "title"
     t.integer "year"
     t.string "genre"
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
