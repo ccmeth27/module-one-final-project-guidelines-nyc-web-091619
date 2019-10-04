@@ -19,6 +19,7 @@ class UserMovie < ActiveRecord::Base
         end
         if user_decision == 1
             match_mov = Movie.all.find { |movie| movie.id == self.movie_id  }
+            system "clear"
             puts match_mov.description
             plan_b = prompt.select("Add this movie to your wishlist?") do |menu|
                 menu.choice 'Yes'
